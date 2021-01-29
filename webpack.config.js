@@ -17,22 +17,15 @@ module.exports = {
             loader: ExtractCssChunks.loader
           },
           {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true
-            }
+            loader: 'css-loader'
           },
           {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            }
+            loader: 'sass-loader'
           }
         ]
       }
     ]
   },
-  devtool: 'inline-source-map',
   resolve: {
     extensions: ['.js']
   },
