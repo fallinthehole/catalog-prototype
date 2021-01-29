@@ -73,4 +73,30 @@
             opacity: 1;
         }
     }
+
+}
+.additional-slider-controls {
+    position: relative;
+    .go-to-first, .go-to-last {
+        font-size: 20px;
+        font-family: Monospaced;
+        border: none;
+        background: rgba(253, 253, 253, 0.8);
+        height: 40px;
+        line-height: 40px;
+        width: 100px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        cursor: pointer;
+        transition: background-color .2s;
+
+        &:hover {
+            background: #fafafa;
+        }
+    }
+    .go-to-last {
+        left: auto;
+        right: 0;
+    }
 }

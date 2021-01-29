@@ -20,10 +20,18 @@ const generateOverlays = (slick) => {
   });
 }
 
+const jumpToFirst = (slider) => {
+  slider.slick("slickGoTo", 0);
+}
+const jumpToLast = (slider, index) => {
+  slider.slick("slickGoTo", index);
+}
+
 
 export const initSlider = element => {
   const htmlElement = $(element);
 
+  const slidesLength = htmlElement.children().length - 1;
   // Initialize overlays after slick slider being initialized
   htmlElement.on('init', generateOverlays);
 
@@ -33,4 +41,8 @@ export const initSlider = element => {
     slidesToShow: 2,
     lazyLoad: 'ondemand'
   });
+
+  $('.go-to-first').on('click', function() { jumpToFirst(htmlElement) })
+  $('.go-to-last').on('click', function() { jumpToLast(htmlElement, slidesLength) })
+  console.log(htmlElement);
 };
