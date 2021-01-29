@@ -1,0 +1,14 @@
+.mfp-content {
+    background: #fafafa;
+    width: 700px !important;
+    min-height: 400px;
+    padding: 60px;
+
+    .modal-content {
+        display: inline-block;
+    }
+}
+
+.modal-content {
+    display: none;
+}

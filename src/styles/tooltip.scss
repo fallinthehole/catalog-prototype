@@ -1,0 +1,14 @@
+.tooltip {
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: calc(100% - 8px);
+    width: 120px;
+    max-height: 45px;
+    overflow: auto;
+    background: rgba(38, 37, 37, 0.71);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
