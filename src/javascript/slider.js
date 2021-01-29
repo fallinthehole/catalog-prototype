@@ -42,7 +42,6 @@ export const initSlider = element => {
     lazyLoad: 'ondemand'
   });
 
-  $('.go-to-first').on('click', function() { jumpToFirst(htmlElement) })
-  $('.go-to-last').on('click', function() { jumpToLast(htmlElement, slidesLength) })
-  console.log(htmlElement);
+  $('.go-to-first').on('click', function() { jumpToFirst(htmlElement) });
+  $('.go-to-last').on('click', function() { jumpToLast(htmlElement, slidesLength) });
 };

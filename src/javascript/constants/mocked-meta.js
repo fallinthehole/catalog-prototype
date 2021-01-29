@@ -1,3 +1,8 @@
+/**
+ * Assuming that application content will be dynamic and all the data for sliders and
+ * related information will come from a backend. So here you can see an approximate data
+ * structure for further development.
+ */
 export const meta = [
   {
     page: 1,
